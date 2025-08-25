@@ -1,8 +1,8 @@
-//  const sum = require('./sum');
+const {calculateSum,calculateMultiply} = require('./calculate');
 
- import { calculateSum } from './sum.js';
-import { x } from './sum.js';
-console.log(x);
+//  import { calculateSum } from './sum.js';
+// import { x } from './sum.js';
+// console.log(x);
 
 var namaste = "namaste node js";
 
@@ -13,6 +13,8 @@ var namaste = "namaste node js";
 // console.log(namaste);
 // console.log(global);
 // console.log(this);
-calculateSum(3,6);
+
 // console.log(globalThis == this);
 // console.log(globalThis == global);
+console.log(calculateSum(3,6));
+console.log(calculateMultiply(3,6));
