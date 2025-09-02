@@ -1,15 +1,12 @@
-const fs = require('fs');
-const crypto = require('node:crypto');
+here is the file content,which will be read by fs .
+
+{const fs = require('fs');
 const https = require('https');
 
 console.log("Hello world");
 
 var a = 293;
 var b = 342;
-
-crypto.pbkdf2("password","salt",5000,50,"asd123",(err,key) => {
-    console.log("password generated")
-});
 
 https.get("https://dummyjson.com/products/1",(res) => {
     console.log("Fetched api data  Successfully");
@@ -34,4 +31,4 @@ https.get("https://dummyjson.com/products/1",(res) => {
 
  const prod = multiply(a,b);
 
- console.log("product is evaluate first :-" ,prod);
+ console.log("product is evaluate first :-" ,prod);}
