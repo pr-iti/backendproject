@@ -17,7 +17,7 @@ process.nextTick(()=>{
 
 setTimeout(()=>{
     console.log("timer is called");
-},6000);
+},0);
 
 fs.readFile('file.txt','utf-8' ,(data) =>{
 
@@ -30,13 +30,15 @@ fs.readFile('file.txt','utf-8' ,(data) =>{
     console.log("2nd time next-tick");
 
    });
+   setImmediate(()=>{
+    console.log("2nd time setimmediate");
+   })
    setTimeout(()=>{
     console.log("timer is called ASAP");
     },0);
 
+
 });
-
-
 
 
 setTimeout(()=>{
